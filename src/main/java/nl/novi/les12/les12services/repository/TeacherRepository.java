@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface TeacherRepository extends JpaRepository<Teacher, Long> {
     public List<Teacher> findByDobAfter(LocalDate date);
+    public List<Teacher> findByFirstNameIgnoreCaseAndLastNameIgnoreCase(String firstName, String lastName);
 }

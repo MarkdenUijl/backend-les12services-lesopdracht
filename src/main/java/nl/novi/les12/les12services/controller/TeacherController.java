@@ -23,10 +23,10 @@ public class TeacherController {
         this.service = service;
     }
 
-//    @GetMapping
-//    public ResponseEntity<List<Teacher>> getAllTeachers() {
-//        return ResponseEntity.ok(teacherRepository.findAll());
-//    }
+    @GetMapping
+    public ResponseEntity<List<TeacherDto>> getAllTeachers() {
+        return ResponseEntity.ok(service.getAllTeachers());
+    }
 //
 //    @GetMapping("/after")
 //    public ResponseEntity<List<Teacher>> getTeachersAfter(@RequestParam LocalDate date) {

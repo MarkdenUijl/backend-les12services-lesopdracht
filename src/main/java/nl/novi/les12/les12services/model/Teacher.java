@@ -19,6 +19,8 @@ public class Teacher {
 
     private LocalDate dob;
 
+    private int salary;
+
     public Long getId() {
         return id;
     }
@@ -45,5 +47,13 @@ public class Teacher {
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 }

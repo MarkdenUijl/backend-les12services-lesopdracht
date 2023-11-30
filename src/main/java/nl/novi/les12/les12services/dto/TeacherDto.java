@@ -1,6 +1,7 @@
 package nl.novi.les12.les12services.dto;
 
 import jakarta.persistence.Column;
+import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
@@ -19,4 +20,6 @@ public class TeacherDto {
 
     @Past(message = "mag niet in verleden")
     public LocalDate dob;
+    @Max(100000)
+    public int salary;
 }

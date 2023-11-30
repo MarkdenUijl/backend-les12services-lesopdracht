@@ -1,1 +1,1 @@
-insert into teachers(id, first_name, last_name, dob) values(nextval('teachers_seq'), 'Ada', 'Lovelace', '1852-11-27')
+insert into teachers(id, first_name, last_name, dob, salary) values(nextval('teachers_seq'), 'Ada', 'Lovelace', '1852-11-27', 75000)
